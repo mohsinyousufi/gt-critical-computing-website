@@ -1,237 +1,206 @@
-/* Early Web (1990s) Theme CSS */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Classic 90s Web Styling */
 
 body {
-    font-family: Times, "Times New Roman", serif;
-    background-color: #ffffff;
-    color: #000000;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ffffff ;
+    color: #222222 ;
+    margin: 20px;
     line-height: 1.4;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header Styles */
-header {
-    background-color: #cccccc;
-    border-bottom: 3px solid #000000;
-    padding: 1rem 0;
-}
-
-header h1 {
-    color: #000080;
-    font-size: 2rem;
+h1 {
+    color: #EE1FD2;
     text-align: center;
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav li {
-    margin: 0 1rem;
-}
-
-nav a {
-    color: #0000ff;
-    text-decoration: underline;
-    padding: 0.3rem 0.8rem;
-    border: 2px outset #cccccc;
-    background-color: #eeeeee;
-    display: block;
-}
-
-nav a:hover {
-    background-color: #dddddd;
-    color: #800080;
-}
-
-nav a:visited {
-    color: #800080;
-}
-
-/* Welcome Box */
-.hero {
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.terminal-window {
-    background-color: #f0f0f0;
-    border: 3px inset #cccccc;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.terminal-header {
-    background-color: #000080;
-    color: #ffffff;
-    padding: 0.5rem;
-    font-weight: bold;
-}
-
-.terminal-title {
-    color: #ffffff;
-}
-
-.terminal-content {
-    padding: 1.5rem;
-    text-align: left;
-    font-family: monospace;
-}
-
-.terminal-content p {
-    margin-bottom: 0.3rem;
-    font-size: 1rem;
-}
-
-.cursor {
-    animation: blink 1s infinite;
-}
-
-@keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
-}
-
-/* Main Content */
-main {
-    min-height: calc(100vh - 200px);
-}
-
-section {
-    padding: 2rem 0;
+    font-size: 24px;
 }
 
 h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    color: #EE1FD2;
+    font-size: 18px;
+}
+
+h3 {
+    color: #222222;
+    font-size: 16px;
+}
+
+a {
+    color: #222222;
+    text-decoration: underline;
+    background-color: #FFCF00;
+
+}
+
+a:visited {
+    color: #222222;
+    background-color: #EE1FD2;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
+a:hover {
+    background-color: #EE1FD2;
+}
+nav ul {
+    list-style: none;
     text-align: center;
-    color: #000080;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #EE1FD2;
+    background-color: transparent;
+    text-decoration: none;
     font-weight: bold;
+    padding: 0;
+    border-radius: 0;
 }
 
-/* Grid Layout */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+nav a:hover {
+    color: #FFCF00;
+    background-color: transparent;
 }
 
-/* Cards */
-.card {
-    background-color: #f8f8f8;
-    border: 2px inset #cccccc;
-    padding: 1.5rem;
+nav a:visited {
+    color: #B8A000;
+    background-color: transparent;
 }
 
-.card:hover {
-    background-color: #f0f0f0;
-}
-
-.card h3 {
-    color: #000080;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.card p {
-    color: #000000;
-    line-height: 1.4;
-}
-
-/* News Feed */
-.news {
-    background-color: #eeeeee;
-}
-
-.news-feed {
+.container {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.news-item {
-    display: flex;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: #ffffff;
-    border: 1px solid #999999;
+hr {
+    border: none;
+    border-top: 1px solid #EE1FD2;
+    margin: 20px 0;
 }
 
-.news-item:hover {
-    background-color: #f8f8f8;
+/* Header and Logo Styling */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Hero Section Layout */
+.hero-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hero-text {
+    flex: 2;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.gt-gif {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #EE1FD2;
+}
+
+/* Grid Layout for Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.card {
+    border: 1px solid #EE1FD2;
+    padding: 15px;
+    background-color: #F0F0F0;
+}
+
+/* News Feed Styling */
+.news-feed {
+    margin-top: 15px;
+}
+
+.news-item {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-left: 3px solid #EE1FD2;
+    background-color: #F0F0F0;
 }
 
 .date {
-    color: #000080;
-    margin-right: 1rem;
-    min-width: 120px;
+    color: #EE1FD2;
     font-weight: bold;
+    margin-right: 10px;
 }
 
-.text {
-    color: #000000;
+/* People Page Styling */
+.people-content {
+    margin: 20px 0;
 }
 
-/* Footer */
-footer {
-    background-color: #cccccc;
-    border-top: 3px solid #000000;
-    padding: 1.5rem 0;
-    text-align: center;
-    margin-top: 2rem;
+.people-list {
+    margin-top: 15px;
 }
 
-footer p {
-    color: #000000;
-    font-size: 0.9rem;
+.people-list p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.people-list a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #100085;;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.people-list a:hover {
+    color: #FFCF00;
+    background-color: transparent;
+}
+
+.people-list a:visited {
+    color: #B8A000;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-    
-    nav ul {
+@media (max-width: 600px) {
+    .header-content {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
     
-    nav li {
-        margin: 0.5rem 0;
-    }
-    
-    .terminal-content {
-        padding: 1rem;
-    }
-    
-    .news-item {
+    .hero-content {
         flex-direction: column;
     }
     
-    .date {
-        margin-bottom: 0.5rem;
+    .hero-image {
+        order: -1;
     }
-}
-
-/* Selection styling */
-::selection {
-    background: #0000ff;
-    color: #ffffff;
+    
+    .gt-gif {
+        max-width: 200px;
+    }
 }
