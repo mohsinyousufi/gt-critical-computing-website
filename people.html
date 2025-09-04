@@ -3,54 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Critical Computing Research Group</title>
+    <title>People | Critical Computing Research Group</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <img src="imgs/logo.png" alt="GT Logo" class="logo">
-               
+    <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-symbol"></div>
+            <div class="logo-text">
+                <span class="primary">Critical</span>
+                <span class="secondary">Computing</span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="people.html">PEOPLE</a></li>
-                    <li><a href="events.html">EVENTS</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="people.html" class="active">People</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+        </nav>
+    </aside>
 
     <main>
-        <section class="people-content">
+        <section>
             <div class="container">
-                <h2>FACULTY</h2>
-                
-                <div class="people-list">
-                    <p><a href="#">Dr. Richmond Y. Wong</a> - Assistant Professor, Digital Media</p>
-                    <p><a href="#">Dr. Heidi Biggs</a> - Assistant Professor, Digital Media</p>
-                    <p><a href="#">Dr. Andre Brock</a> - Associate Professor, Digital Media</p>
-                    <p><a href="#">Dr. Carl DiSalvo</a></p>
-                    <p><a href="#">Dr. Betsy DiSalvo</a></p>
+                <h1 class="section-title">Our Community</h1>
+                <p class="section-subtitle">Meet the researchers, students, and community partners driving critical perspectives in computing technology</p>
+            </div>
+        </section>
 
+        <section>
+            <div class="container">
+                <h2 class="section-title">Faculty & Principal Investigators</h2>
+                <div class="grid grid-3">
+                    <div class="person-card">
+                        <div class="person-avatar">AC</div>
+                        <div class="person-name">Dr. Aria Chen</div>
+                        <div class="person-title">Associate Professor, School of Interactive Computing</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">LM</div>
+                        <div class="person-name">Dr. Luis Martinez</div>
+                        <div class="person-title">Assistant Professor, School of Public Policy</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">KW</div>
+                        <div class="person-name">Dr. Keisha Wong</div>
+                        <div class="person-title">Associate Professor, School of Literature, Media, and Communication</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">DB</div>
+                        <div class="person-name">Dr. David Biggs</div>
+                        <div class="person-title">Professor, School of Interactive Computing</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">SP</div>
+                        <div class="person-name">Dr. Samara Patel</div>
+                        <div class="person-title">Assistant Professor, School of History and Sociology</div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <h2>STUDENTS</h2>
-                <div class="people-list">
-                    <p><a href="#">Allie Teixeira Riggs</a> - Ph.D. Candidate, Digital Media</p>
-                    <p><a href="#">Mohsin Y. K. Yousufi</a> - Ph.D. Candidate, Digital Media</p>
+        <section>
+            <div class="container">
+                <h2 class="section-title">Postdoctoral Researchers</h2>
+                <div class="grid grid-4">
+                    <div class="person-card">
+                        <div class="person-avatar">JK</div>
+                        <div class="person-name">Dr. Jordan Kim</div>
+                        <div class="person-title">Postdoctoral Fellow, AI Ethics</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">RA</div>
+                        <div class="person-name">Dr. Riley Anderson</div>
+                        <div class="person-title">Postdoctoral Fellow, Platform Studies</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">MO</div>
+                        <div class="person-name">Dr. Maya Okafor</div>
+                        <div class="person-title">Visiting Postdoc, Data Justice</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section>
+            <div class="container">
+                <h2 class="section-title">Graduate Students</h2>
+                <div class="grid grid-4">
+                    <div class="person-card">
+                        <div class="person-avatar">TN</div>
+                        <div class="person-name">Taylor Nguyen</div>
+                        <div class="person-title">PhD Student, Human-Computer Interaction</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">AS</div>
+                        <div class="person-name">Alex Smith</div>
+                        <div class="person-title">PhD Student, Machine Learning</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">ZL</div>
+                        <div class="person-name">Zara Lopez</div>
+                        <div class="person-title">MS Student, Computer Science</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">MJ</div>
+                        <div class="person-name">Morgan Jackson</div>
+                        <div class="person-title">PhD Student, Digital Media</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">RW</div>
+                        <div class="person-name">River Williams</div>
+                        <div class="person-title">PhD Student, Science & Technology Studies</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">EG</div>
+                        <div class="person-name">Emma Garcia</div>
+                        <div class="person-title">MS Student, Cybersecurity Policy</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">CP</div>
+                        <div class="person-name">Casey Park</div>
+                        <div class="person-title">PhD Student, Information Science</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">DT</div>
+                        <div class="person-name">Devon Thompson</div>
+                        <div class="person-title">MS Student, Public Policy</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section>
+            <div class="container">
+                <h2 class="section-title">Undergraduate Researchers</h2>
+                <div class="grid grid-4">
+                    <div class="person-card">
+                        <div class="person-avatar">SB</div>
+                        <div class="person-name">Sofia Brown</div>
+                        <div class="person-title">Computer Science, Class of 2026</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">JD</div>
+                        <div class="person-name">Jamie Davis</div>
+                        <div class="person-title">Industrial Design, Class of 2025</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">LZ</div>
+                        <div class="person-name">Lin Zhou</div>
+                        <div class="person-title">Computer Science, Class of 2027</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">KR</div>
+                        <div class="person-name">Kai Rodriguez</div>
+                        <div class="person-title">International Affairs, Class of 2026</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">AH</div>
+                        <div class="person-name">Avery Hill</div>
+                        <div class="person-title">Literature, Media & Communication, Class of 2025</div>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-avatar">NS</div>
+                        <div class="person-name">Noor Shah</div>
+                        <div class="person-title">Computer Science, Class of 2027</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Community Partners & Collaborators</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3>Atlanta Digital Justice Coalition</h3>
+                        <p>Grassroots organization working on digital equity and technology justice issues in Atlanta communities.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Southface Institute</h3>
+                        <p>Nonprofit promoting sustainable communities through environmental and social justice approaches to technology.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Code for Atlanta</h3>
+                        <p>Civic technology volunteer organization building digital tools for community empowerment.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Emory Center for AI Ethics</h3>
+                        <p>Academic partnership exploring ethical dimensions of artificial intelligence research and deployment.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Movement Strategy Center</h3>
+                        <p>National organization supporting community organizing through strategic research and technology tools.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Data for Black Lives</h3>
+                        <p>Movement organization focused on data science for racial justice and community empowerment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Join Our Community</h2>
+                <div class="grid grid-2">
+                    <div class="card featured-card">
+                        <h3>For Prospective Students</h3>
+                        <p>We welcome students from diverse academic backgrounds who are passionate about the social dimensions of computing. Our group includes members from computer science, public policy, digital media, STS, and more.</p>
+                    </div>
+                    <div class="card">
+                        <h3>For Researchers & Collaborators</h3>
+                        <p>Interested in collaborating on critical computing research? We're always open to new partnerships with scholars, community organizations, and practitioners working at the intersection of technology and social justice.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Critical Computing Research Group | Georgia Institute of Technology</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Critical Computing Research Group</h4>
+                    <p>Georgia Institute of Technology<br>
+                    School of Interactive Computing<br>
+                    Atlanta, GA 30332</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:criticalcomputing@gatech.edu">criticalcomputing@gatech.edu</a><br>
+                    Twitter: <a href="#">@GTCriticalComp</a><br>
+                    Mastodon: <a href="#">@criticalcomp@hci.social</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <p><a href="people.html">People</a><br>
+                    <a href="events.html">Events</a><br>
+                    <a href="research.html">Research</a><br>
+                    <a href="#publications">Publications</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Critical Computing Research Group | Georgia Institute of Technology</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>

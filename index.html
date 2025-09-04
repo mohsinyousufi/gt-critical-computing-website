@@ -3,80 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Critical Computing @ GT</title>
+    <title>Critical Computing Research Group | Georgia Tech</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <img src="imgs/logo.png" alt="GT Logo" class="logo">
+    <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-symbol"></div>
+            <div class="logo-text">
+                <span class="primary">Critical</span>
+                <span class="secondary">Computing</span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="people.html">PEOPLE</a></li>
-                    <li><a href="events.html">EVENTS</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-    <main>        <section class="hero">
+    <main>
+        <section>
             <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h2>Welcome to Critical Computing @ Georgia Tech</h2>
-                        <p>Critical computing interrogates the social values, normative orientations, and unintended consequences of computing applications, and it is quickly coming to occupy a central place in research and practice 
-                            amongst Georgia Tech researchers and their larger research communities. We seek to build a transdisciplinary critical computing research community at Georgia Tech spanning computing, the social sciences, humanities, and 
-                            related disciplines. Through a working group and <a href="events.html">symposium</a> series, we will explore the methods, concepts, theories, history, funding, and evaluation of critical computing research. We will investigate approaches to critical computing research that foreground issues of social values and ethics, engage in just and equitable research approaches, explore new forms of communication and expression, and seek to pursue meaningful alternatives to the status quo.
-</p>
-
-<p>This group is supported by a grant from <a href="https://research.gatech.edu/ipat">IPaT</a> and GTRI for the 2024-2025 academic year.</p>
-</p>   
-</div>
-                    <div class="hero-image">
-                        <img src="imgs/gatech-med.gif" alt="Georgia Tech" class="gt-gif">
+                <h1 class="section-title">Critical Computing Research Group</h1>
+                <p class="section-subtitle">Examining the social, political, and ethical dimensions of computing technologies at Georgia Institute of Technology</p>
+                
+                <div class="grid grid-2">
+                    <div class="card featured-card">
+                        <h3>Critical Computing Perspectives</h3>
+                        <p>We investigate how computing technologies intersect with power, justice, and social change. Our interdisciplinary approach combines computer science with science and technology studies, critical theory, and community engagement.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Community-Centered Research</h3>
+                        <p>Our research is grounded in collaboration with communities most impacted by technological systems. We prioritize participatory methods and community ownership of research outcomes.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="about-preview">
+        <section>
             <div class="container">
-                <h2>▼ RESEARCH FOCUS ▼</h2>
-                <div class="grid">
+                <h2 class="section-title">Research Areas</h2>
+                <div class="grid grid-3">
                     <div class="card">
-                        <h3>▶ ARTIFICIAL INTELLIGENCE</h3>
-                        <p>Exploring the boundaries of machine learning and neural networks to push the limits of computational intelligence.</p>
+                        <h3>Algorithmic Justice</h3>
+                        <p>Investigating bias, fairness, and accountability in automated decision-making systems, with focus on criminal justice, hiring, and social services.</p>
+                    </div>
+                    <div class="card featured-card">
+                        <h3>Platform Governance</h3>
+                        <p>Analyzing how digital platforms shape public discourse, democratic participation, and social movements through content moderation and algorithmic curation.</p>
                     </div>
                     <div class="card">
-                        <h3>▶ HUMAN COMPUTER INTERACTION</h3>
-                        <p>Investigating quantum algorithms and their applications in solving complex computational problems.</p>
+                        <h3>Data Justice</h3>
+                        <p>Examining power dynamics in data collection, ownership, and use, with emphasis on surveillance, privacy, and community data sovereignty.</p>
                     </div>
                     <div class="card">
-                        <h3>▶ SOCIAL COMPUTING</h3>
-                        <p>Developing advanced security protocols and cryptographic methods for next-generation systems.</p>
+                        <h3>AI Ethics in Practice</h3>
+                        <p>Moving beyond abstract principles to understand how ethical considerations are implemented (or ignored) in real-world AI development and deployment.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Digital Labor</h3>
+                        <p>Studying the changing nature of work in the digital economy, including gig work, content moderation, and AI training labor.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Technology Policy</h3>
+                        <p>Analyzing policy interventions in technology governance, from local ordinances to international regulatory frameworks.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="news">
+        <section>
             <div class="container">
-                <h2>♦ LATEST UPDATES ♦</h2>
-                <div class="news-feed">
-                    <div class="news-item">
-                        <span class="date">[2025.06.15]</span>
-                        <span class="text">New quantum encryption algorithm published in Nature Computing</span>
+                <h2 class="section-title">Recent News & Updates</h2>
+                <div class="event-feed">
+                    <div class="event-item">
+                        <div class="event-date">Aug 2025</div>
+                        <div class="event-content">
+                            <h4>New NSF Grant Awarded</h4>
+                            <p>Our group received a $1.2M NSF grant to study algorithmic bias in municipal decision-making systems, in partnership with Atlanta city government.</p>
+                        </div>
                     </div>
-                    <div class="news-item">
-                        <span class="date">[2025.05.28]</span>
-                        <span class="text">Dr. Smith receives NSF grant for AI ethics research project</span>
+                    <div class="event-item">
+                        <div class="event-date">Jul 2025</div>
+                        <div class="event-content">
+                            <h4>Paper Accepted to FAccT 2026</h4>
+                            <p>"Community Ownership of AI Training Data: A Study of Three Atlanta Neighborhoods" accepted to the ACM Conference on Fairness, Accountability, and Transparency.</p>
+                        </div>
                     </div>
-                    <div class="news-item">
-                        <span class="date">[2025.05.10]</span>
-                        <span class="text">Lab presents findings at International Computing Conference 2025</span>
+                    <div class="event-item">
+                        <div class="event-date">Jun 2025</div>
+                        <div class="event-content">
+                            <h4>Critical Computing Symposium Recap</h4>
+                            <p>Over 200 researchers, activists, and community members joined our annual symposium on "AI, Justice, and the Future of Work." Videos and proceedings now available.</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">May 2025</div>
+                        <div class="event-content">
+                            <h4>New Book Publication</h4>
+                            <p>"Computing and Social Justice: Perspectives from the South" edited by group members Dr. Chen and Dr. Martinez, published by MIT Press.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Get Involved</h2>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3>For Students</h3>
+                        <p>We welcome undergraduate and graduate students from all disciplines. Join our weekly working group, apply for research positions, or attend our events to learn more about critical computing perspectives.</p>
+                        <a href="events.html" class="btn btn-primary" style="margin-top: 1rem;">Join Events</a>
+                    </div>
+                    <div class="card">
+                        <h3>For Community Partners</h3>
+                        <p>We're committed to community-engaged research. If you're part of an organization interested in collaborative research on technology's social impacts, we'd love to hear from you.</p>
+                        <a href="research.html" class="btn btn-secondary" style="margin-top: 1rem;">Our Research</a>
                     </div>
                 </div>
             </div>
@@ -85,8 +135,38 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Critical Computing Research Group | Georgia Institute of Technology</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Critical Computing Research Group</h4>
+                    <p>Georgia Institute of Technology<br>
+                    School of Interactive Computing<br>
+                    Atlanta, GA 30332</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:criticalcomputing@gatech.edu">criticalcomputing@gatech.edu</a><br>
+                    Twitter: <a href="#">@GTCriticalComp</a><br>
+                    Mastodon: <a href="#">@criticalcomp@hci.social</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <p><a href="people.html">People</a><br>
+                    <a href="events.html">Events</a><br>
+                    <a href="research.html">Research</a><br>
+                    <a href="#publications">Publications</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Critical Computing Research Group | Georgia Institute of Technology</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>

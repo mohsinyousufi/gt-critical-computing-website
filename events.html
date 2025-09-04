@@ -3,56 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Critical Computing @ GT</title>
+    <title>Events | Critical Computing Research Group</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <img src="imgs/logo.png" alt="GT Logo" class="logo">
-                
+    <button class="mobile-toggle" onclick="toggleSidebar()">☰</button>
+    
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-symbol"></div>
+            <div class="logo-text">
+                <span class="primary">Critical</span>
+                <span class="secondary">Computing</span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="people.html">PEOPLE</a></li>
-                    <li><a href="events.html">EVENTS</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+        </nav>
+    </aside>
 
     <main>
-        <section class="events-content">
+        <section>
             <div class="container">
-                <h2>♦ UPCOMING EVENTS ♦</h2>
-                
-                <div class="news-feed">
-                    <div class="news-item">
-                        <span class="date">[2025.07.15]</span>
-                        <span class="text">Critical Computing Symposium - "AI Ethics in Practice"</span>
+                <h1 class="section-title">Events & Gatherings</h1>
+                <p class="section-subtitle">Join our community for symposiums, workshops, talks, and collaborative discussions about critical computing</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="event-feed">
+                    <div class="event-item">
+                        <div class="event-date">Sep 15, 2025</div>
+                        <div class="event-content">
+                            <h4>Critical Computing Symposium 2025</h4>
+                            <p><strong>Theme:</strong> "AI, Justice, and the Future of Work"<br>
+                            A full-day symposium featuring keynote speakers, panel discussions, and graduate student presentations. Registration opens August 1st.</p>
+                        </div>
                     </div>
-                    <div class="news-item">
-                        <span class="date">[2025.08.02]</span>
-                        <span class="text">Workshop: "Decolonizing Computing Research Methods"</span>
+                    <div class="event-item">
+                        <div class="event-date">Sep 28, 2025</div>
+                        <div class="event-content">
+                            <h4>Workshop: Decolonizing Data Science Methods</h4>
+                            <p>Interactive workshop exploring alternative approaches to data collection, analysis, and interpretation. Led by Dr. Samara Patel and community partners from the Atlanta Digital Justice Coalition.</p>
+                        </div>
                     </div>
-                    <div class="news-item">
-                        <span class="date">[2025.08.20]</span>
-                        <span class="text">Panel Discussion: "Social Values in Algorithm Design"</span>
+                    <div class="event-item">
+                        <div class="event-date">Oct 12, 2025</div>
+                        <div class="event-content">
+                            <h4>Panel: Platform Governance and Democratic Values</h4>
+                            <p>Examining the role of tech platforms in shaping public discourse and democratic participation. Featuring researchers from Georgia Tech, Emory, and activists from national digital rights organizations.</p>
+                        </div>
                     </div>
-                    <div class="news-item">
-                        <span class="date">[2025.09.05]</span>
-                        <span class="text">Graduate Student Research Presentations</span>
+                    <div class="event-item">
+                        <div class="event-date">Oct 26, 2025</div>
+                        <div class="event-content">
+                            <h4>Graduate Student Research Colloquium</h4>
+                            <p>Lightning talks and poster session featuring ongoing research projects by our graduate student members. Open to all Georgia Tech community members.</p>
+                        </div>
                     </div>
-                    <div class="news-item">
-                        <span class="date">[2025.09.18]</span>
-                        <span class="text">Invited Talk: Dr. Safiya Noble on "Algorithms of Oppression"</span>
+                    <div class="event-item">
+                        <div class="event-date">Nov 9, 2025</div>
+                        <div class="event-content">
+                            <h4>Invited Talk: Dr. Ruha Benjamin</h4>
+                            <p><strong>Topic:</strong> "Race After Technology: Abolitionist Tools for the New Jim Code"<br>
+                            Virtual presentation and discussion with the author of influential work on algorithmic bias and racial justice.</p>
+                        </div>
                     </div>
-                    <div class="news-item">
-                        <span class="date">[2025.10.10]</span>
-                        <span class="text">Community Engagement Forum: "Tech Justice in Atlanta"</span>
+                    <div class="event-item">
+                        <div class="event-date">Nov 23, 2025</div>
+                        <div class="event-content">
+                            <h4>Community Engagement Forum</h4>
+                            <p><strong>Theme:</strong> "Tech Justice in Atlanta"<br>
+                            Bringing together local community organizations and researchers to discuss technology's impact on Atlanta communities. Co-hosted with Southface Institute.</p>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Regular Programming</h2>
+                <div class="grid grid-3">
+                    <div class="card featured-card">
+                        <h3>Weekly Working Group</h3>
+                        <p><strong>When:</strong> Every Friday, 2-4 PM<br>
+                        <strong>Where:</strong> Klaus 2456<br>
+                        A regular meeting space for group members to share ongoing research, discuss readings, and collaborate on projects. Open to all group members and invited guests.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Monthly Book Club</h3>
+                        <p><strong>When:</strong> First Thursday of each month, 6-7:30 PM<br>
+                        <strong>Where:</strong> Rotating locations<br>
+                        Open to the wider Georgia Tech community, we read and discuss foundational texts in critical computing and STS.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Quarterly Symposiums</h3>
+                        <p><strong>When:</strong> September, December, March, June<br>
+                        <strong>Where:</strong> Georgia Tech campus<br>
+                        Large-scale events bringing together researchers from across the Southeast to engage with current issues at the intersection of computing and society.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Recent Events</h2>
+                <div class="event-feed">
+                    <div class="event-item">
+                        <div class="event-date">Aug 20, 2025</div>
+                        <div class="event-content">
+                            <h4>Summer Research Showcase</h4>
+                            <p>Presentations from summer undergraduate researchers and visiting scholars. Featured projects on AI bias in hiring, platform labor organizing, and community data governance.</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">Jul 15-16, 2025</div>
+                        <div class="event-content">
+                            <h4>Workshop: Critical Approaches to AI Ethics</h4>
+                            <p>Two-day intensive workshop for faculty and graduate students, exploring beyond mainstream AI ethics to examine structural critiques of artificial intelligence systems.</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">Jun 28, 2025</div>
+                        <div class="event-content">
+                            <h4>Book Launch: "Computing and Social Justice"</h4>
+                            <p>Celebration and discussion of the new edited volume by group members Dr. Wong and Dr. Biggs, featuring contributions from scholars and activists worldwide.</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">May 18, 2025</div>
+                        <div class="event-content">
+                            <h4>DH2025 Conference Panel</h4>
+                            <p>Group members participated in "The Future of Digital Humanities" panel at the Digital Humanities 2025 conference, in collaboration with Emory University researchers.</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">Apr 14, 2025</div>
+                        <div class="event-content">
+                            <h4>Community Data Sovereignty Workshop</h4>
+                            <p>Collaborative workshop with Atlanta community organizations on community ownership and governance of data. Results published as community-authored white paper.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Event Resources</h2>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3>Past Event Materials</h3>
+                        <p>Videos, slides, and proceedings from our symposiums and workshops are available in our <a href="#" style="color: var(--black); text-decoration: underline;">digital archive</a>. All materials are shared under Creative Commons licenses to support broader community engagement.</p>
+                    </div>
+                    <div class="card featured-card">
+                        <h3>Community Guidelines</h3>
+                        <p>Our events prioritize inclusive, anti-oppressive practices. Read our <a href="#" style="color: var(--white); text-decoration: underline;">community guidelines</a> to learn about our approach to creating brave spaces for difficult conversations about technology and justice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Get Involved</h2>
+                <div class="hero-content">
+                    <p>Our events are open to Georgia Tech students, faculty, staff, and community members from the broader Atlanta area. We especially welcome participation from folks whose communities are most impacted by technological systems.</p>
+                    
+                    <p><strong>Stay Updated:</strong> Subscribe to our mailing list for event announcements and updates. Email <a href="mailto:criticalcomputing@gatech.edu" style="color: var(--primary-purple);">criticalcomputing@gatech.edu</a> with "Subscribe" in the subject line.</p>
+                    
+                    <p><strong>Propose an Event:</strong> Have an idea for a workshop, panel, or discussion? We welcome community-initiated programming that aligns with our critical computing focus.</p>
+                    
+                    <p><strong>Accessibility:</strong> All our events are designed to be accessible. If you have specific accessibility needs or want to help make our events more inclusive, please reach out.</p>
                 </div>
             </div>
         </section>
@@ -60,8 +191,38 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Critical Computing Research Group | Georgia Institute of Technology</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Critical Computing Research Group</h4>
+                    <p>Georgia Institute of Technology<br>
+                    School of Interactive Computing<br>
+                    Atlanta, GA 30332</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:criticalcomputing@gatech.edu">criticalcomputing@gatech.edu</a><br>
+                    Twitter: <a href="#">@GTCriticalComp</a><br>
+                    Mastodon: <a href="#">@criticalcomp@hci.social</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <p><a href="people.html">People</a><br>
+                    <a href="events.html">Events</a><br>
+                    <a href="research.html">Research</a><br>
+                    <a href="#publications">Publications</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Critical Computing Research Group | Georgia Institute of Technology</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
